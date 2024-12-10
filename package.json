@@ -1,0 +1,47 @@
+{
+  "name": "youngduck",
+  "displayName": "kydnippet",
+  "description": "make code common",
+  "version": "0.0.3",
+  "publisher": "youngduck",
+  "icon": "images/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youngduck/vscode-snippets"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/react/react.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react/react.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/react.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react/react.code-snippets"
+      },
+      {
+        "language": "sql",
+        "path": "./snippets/java/sql.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/java/xml.code-snippets"
+      }
+    ]
+  }
+}
