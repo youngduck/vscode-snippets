@@ -1,8 +1,8 @@
 {
   "name": "youngduck",
-  "displayName": "kydnippet",
+  "displayName": "yd-snippets",
   "description": "make code common",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "youngduck",
   "icon": "images/logo.png",
   "repository": {

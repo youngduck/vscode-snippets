@@ -1,12 +1,12 @@
 {
   // 기본 함수 생성
-  "elf": {
-    "prefix": ["elf", "ELF"],
+  "ydf": {
+    "prefix": ["ydf", "YDF"],
     "body": [
       "",
       "/**",
       " * 작성자: KYD",
-      " * 기능: EL MARK 팝업 호출",
+      " * 기능:",
       " * @returns",
       " */",
       "export const $TM_FILENAME_BASE = () => {",
@@ -17,8 +17,8 @@
     "description": "기본 함수 생성"
   },
   // 리액트 컴포넌트 생성
-  "elr": {
-    "prefix": ["elr", "ELR"],
+  "ydr": {
+    "prefix": ["ydr", "YDR"],
     "body": [
       "",
       "/**",
@@ -55,14 +55,17 @@
     "description": "기본 리액트 컴포넌트 생성"
   },
   // 리액트 쿼리 서스펜스 쿼리 훅 생성
-  "elsq": {
-    "prefix": ["elsq", "ELSQ"],
+  "ydsq": {
+    "prefix": ["ydsq", "YDSQ"],
     "body": [
       "",
       "import { queryKeys } from '@/react-query/queryKeys';",
       "import { useSuspenseQuery } from '@tanstack/react-query';",
       "",
-      "const $TM_FILENAME_BASE = () => {",
+      "interface I$TM_FILENAME_BASE{",
+      "",
+      "",
+      "export const $TM_FILENAME_BASE = () => {",
       "\treturn;",
       "};",
       ""
@@ -70,8 +73,8 @@
     "description": "기본 리액트 쿼리 훅 생성"
   },
   // 리액트 api 호출
-  "ela": {
-    "prefix": ["ela", "ELA"],
+  "yda": {
+    "prefix": ["yda", "YDA"],
     "body": [
       "import axios from 'axios';",
       "",
@@ -90,5 +93,32 @@
       "export default $TM_FILENAME_BASEData;"
     ],
     "description": "기본 리액트 api 호출"
+  },
+  // 리액트 zustand store 생성
+  "ydz": {
+    "prefix": ["ydz", "YDZ"],
+    "body": [
+      "import { create } from 'zustand';",
+      "import { createJSONStorage, persist } from 'zustand/middleware';",
+      "",
+      "interface I$TM_FILENAME_BASE {",
+      "}",
+      "",
+      "const initial$TM_FILENAME_BASEState = {",
+      "\t// 초기상태 선언",
+      "};",
+      "",
+      "export const use$TM_FILENAME_BASE = create(",
+      "\tpersist<I$TM_FILENAME_BASE>(",
+      "\t\tset => ({",
+      "\t\t}),",
+      "\t\t{",
+      "\t\t\tname: '$1-store',",
+      "\t\t\tstorage: createJSONStorage(() => sessionStorage),",
+      "\t\t},",
+      "\t),",
+      ");"
+    ],
+    "description": "리액트 zustand store 생성"
   }
 }
