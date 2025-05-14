@@ -1,4 +1,18 @@
-# 패치노트트
+# 패치노트
+
+## [0.0.5] - 2025-03-25
+
+### 추가
+
+- 추가된 기능 작성
+
+### 변경
+
+- 기본 리액트 컴포넌트 생성 단축키 'YDR' 개선
+  - "함수형 컴포넌트 사용 시 React.FC를 활용한 타입 선언 대신 props를 활용할것" 권고사항 반영
+  - frontend fundamental 코드 권고사항 반영
+    - 매직넘버작성영역 추가.
+  - 상단 주석영역 작성자 'KYD' 에서 공란 으로 변경
 
 ## [0.0.4] - 2025-03-24
 
@@ -10,13 +24,3 @@
 
 - 단축키 접두사를 'EL'에서 'YD'로 변경
 - 확장 프로그램 이름을 'kydnippet'에서 'yd-snippets'로 변경
-
-# Change Log
-
-All notable changes to the "youngduck" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
